@@ -1,3 +1,7 @@
+posts:
+    resource: "@PostsBundle/Resources/config/routing.yml"
+    prefix:   /
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
@@ -9,3 +13,7 @@ easy_admin_bundle:
     resource: "@EasyAdminBundle/Controller/AdminController.php"
     type:   annotation
     prefix: /dashboard
+
+PostsBundle:
+    resource: "@PostsBundle/Resources/config/routing.yml"
+    prefix: /blog
